@@ -1,0 +1,7 @@
+pytest
+pytest-mock
+pytest-cov
+black
+ruff
+mypy
+pre-commit
