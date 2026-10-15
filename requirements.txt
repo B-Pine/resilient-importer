@@ -3,5 +3,5 @@ pytest-mock
 pytest-cov
 black
 ruff
-mypy
+mypy==1.11.2
 pre-commit
