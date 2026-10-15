@@ -31,7 +31,7 @@ class ValidationError(ImporterError):
             row_number: Line number of the offending row in the CSV file.
             message: Explanation of what is wrong with the row.
         """
-        super().__init__(f"Row {row_number}: {message}")
+        super().__init__(message)
         self.row_number = row_number
 
 
