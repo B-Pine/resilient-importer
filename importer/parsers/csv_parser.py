@@ -4,9 +4,7 @@ import csv
 from pathlib import Path
 
 from importer.exceptions import FileFormatError, MissingFileError
-from importer.models import RawRow
-
-CSV_COLUMNS = ("user_id", "name", "email")
+from importer.models import USER_FIELDS, RawRow
 
 
 class CsvParser:
@@ -59,7 +57,7 @@ class CsvParser:
         if header is None:
             raise FileFormatError("File is empty")
         columns = tuple(column.strip() for column in header)
-        if columns != CSV_COLUMNS:
+        if columns != USER_FIELDS:
             raise FileFormatError(
-                f"Expected header {', '.join(CSV_COLUMNS)}, got {', '.join(columns)}"
+                f"Expected header {', '.join(USER_FIELDS)}, got {', '.join(columns)}"
             )
