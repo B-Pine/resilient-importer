@@ -1,0 +1,6 @@
+   user_id,name,email
+   1,Alice Mukamana,alice@example.com
+   2,Jean Habimana,jean@example.com
+   3,,missing.name@example.com
+   1,Alice Duplicate,alice2@example.com
+   4,Bad Email,not-an-email
