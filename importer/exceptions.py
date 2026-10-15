@@ -50,3 +50,7 @@ class DuplicateUserError(ImporterError):
         """
         super().__init__(f"User with id '{user_id}' already exists")
         self.user_id = user_id
+
+
+class StorageError(ImporterError):
+    """Raised when the JSON database cannot be read or written."""
