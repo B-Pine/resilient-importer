@@ -1,7 +1,9 @@
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from pathlib import Path
 
 import pytest
+
+from importer.logging_config import reset_logging
 
 
 @pytest.fixture
@@ -12,3 +14,9 @@ def write_csv(tmp_path: Path) -> Callable[[str], Path]:
         return path
 
     return _write
+
+
+@pytest.fixture(autouse=True)
+def clean_logging() -> Iterator[None]:
+    yield
+    reset_logging()
