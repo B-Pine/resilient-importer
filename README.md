@@ -7,7 +7,7 @@ A command-line tool that imports users from a CSV file into a JSON file acting a
 Requires Python 3.11+.
 
 ```bash
-git clone https://github.com/<your-username>/resilient-importer.git
+git clone https://github.com/B-Pine/resilient-importer.git
 cd resilient-importer
 python -m venv .venv
 .venv\Scripts\activate          # Windows
