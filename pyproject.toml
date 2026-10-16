@@ -19,3 +19,7 @@ strict = true
 [tool.coverage.run]
 branch = true
 source = ["importer"]
+fail_under = 90
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
