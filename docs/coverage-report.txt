@@ -1,0 +1,25 @@
+﻿Name                                            Stmts   Miss Branch BrPart  Cover
+---------------------------------------------------------------------------------
+importer\__init__.py                                0      0      0      0   100%
+importer\__main__.py                                3      3      2      0     0%
+importer\cli.py                                    31      0      0      0   100%
+importer\exceptions.py                             12      0      0      0   100%
+importer\logging_config.py                         18      0      2      0   100%
+importer\models\__init__.py                         5      0      0      0   100%
+importer\models\import_report.py                    4      0      0      0   100%
+importer\models\raw_row.py                          3      0      0      0   100%
+importer\models\skipped_row.py                      3      0      0      0   100%
+importer\models\user.py                             4      0      0      0   100%
+importer\parsers\__init__.py                        2      0      0      0   100%
+importer\parsers\csv_parser.py                     27      0      8      0   100%
+importer\repositories\__init__.py                   0      0      0      0   100%
+importer\repositories\json_user_repository.py      37      0      2      0   100%
+importer\repositories\user_repository.py            9      0      0      0   100%
+importer\services\__init__.py                       0      0      0      0   100%
+importer\services\import_service.py                30      0      4      0   100%
+importer\utils\__init__.py                          0      0      0      0   100%
+importer\utils\files.py                            12      0      0      0   100%
+importer\utils\formatters.py                       11      0      2      0   100%
+importer\utils\validators.py                       20      0      8      0   100%
+---------------------------------------------------------------------------------
+TOTAL                                             231      3     28      0    98%
