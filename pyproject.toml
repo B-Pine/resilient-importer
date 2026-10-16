@@ -1,0 +1,25 @@
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "D"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D"]
+
+[tool.mypy]
+strict = true
+
+[tool.coverage.run]
+branch = true
+source = ["importer"]
+fail_under = 90
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
