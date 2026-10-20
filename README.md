@@ -154,3 +154,6 @@ The project follows Git Flow:
 - `release/*`: prepares a release from `develop` for merging into `main`
 
 Every pull request uses the template in `.github/pull_request_template.md` and is merged with a merge commit, so each feature branch stays visible in `git log --oneline --graph --all`.
+
+## Loom Video
+[Resilient Importer](https://www.loom.com/share/82219d80e6694ee9acf02ee79bb89fd7)
